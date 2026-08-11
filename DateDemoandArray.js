@@ -42,7 +42,27 @@
 // console.log(`after removing last element from fruits array is ${fruits}`);
 
 //javascript array concat
-const arr1 = ["apple", "banana"];
-const arr2 = ["orange", "grape"];
-const arr3 = arr1.concat(arr2);
-console.log(`after concatenating the two arrays is ${arr3}`);
+// const arr1 = ["apple", "banana"];
+// const arr2 = ["orange", "grape"];
+// const arr3 = arr1.concat(arr2);
+// console.log(`after concatenating the two arrays is ${arr3}`);
+
+// const numbers=[4,9,16,25,29];
+
+// function myFunction(value,index,array){
+//     return value>18;
+// }
+// const result=numbers.filter(myFunction);
+// console.log(`after filtering the numbers array is ${result}`);
+//SORT METHOD
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(`before sorting the fruits array is ${fruits}`);
+// fruits.sort();
+// console.log(`after sorting the fruits array is ${fruits}`);
+const cars = [
+  {model:"Volvo", year:2016},
+  {model:"Saab", year:2001},
+  {model:"BMW", year:2010}
+];
+cars.sort((a, b) => a.year - b.year);
+console.log(JSON.stringify(cars.map(({ model, year }) => ({ model, year }))));
