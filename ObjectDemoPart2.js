@@ -31,4 +31,4 @@ console.log(`Employee address is ${employee.address.city}, ${employee.address.st
 
 const keys = Object.keys(employee);
 console.log('Employee keys:', keys);
-keys.forEach(k => console.log(`${k}:`, employee[k]));
+keys.forEach(k => console.log(`${k}:`, employee[k])); 
